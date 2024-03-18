@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+    <h2><%= title %></h2>
+    <div class="col">
+        <label for="nome">Nome do livro:</label>
+        <input type="text" class="nome" placeholder="Nome do livro">
+        <input type="radio" class="form-check-input" id="nome" name="option" value="nome">
+    </div>
+    <br>
+    <div class="col">
+        <label for="ano">Ano de lançamento</label>
+        <input type="number" class="ano" placeholder="Ano">
+        <input type="radio" class="form-check-input" id="ano" name="option" value="ano">
+    </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+    <hr>
+    <div class="resultado" style="display: none;"></div>
+    </body>
+</body>
+<script src="app.js"></script>
+</html>
